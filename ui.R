@@ -9,7 +9,7 @@ options(spinner.type = 6)
 source("helpers.R")
 
 page_navbar(
-  title = "Brain diseases app (version v1.0.0)",
+  title = "Brain diseases app (version v1.0.1)",
   theme = bs_theme(bootswatch = "lumen"),
   #### Brain disease definitions ####
   nav_panel(title = "Brain disease definitions",
@@ -49,6 +49,7 @@ page_navbar(
           choices = list(
             "Incident cohort 2011-2015" = "inc_2011_2015",
             "Incident cohort 2016-2021" = "inc_2016_2021",
+            "Prevalent cohort 2015" = "prev_2015",
             "Prevalent cohort 2016" = "prev_2016",
             "Prevalent cohort 2017" = "prev_2017",
             "Prevalent cohort 2018" = "prev_2018",
@@ -128,6 +129,7 @@ page_navbar(
           inputId = "cost_regression_population_id",
           label = "Population",
           choices = list(
+            "Prevalent cohort 2015" = "prev_2015",
             "Prevalent cohort 2016" = "prev_2016",
             "Prevalent cohort 2017" = "prev_2017",
             "Prevalent cohort 2018" = "prev_2018",
@@ -165,7 +167,7 @@ page_navbar(
       nav_panel(title = "Changes in one-year mortality over time",
         layout_sidebar(
           sidebar = mortality_sidebar_no_pop("mortality_over_time"),
-          withSpinner(plotOutput("mortality_changes_over_time", height = "800px", width = "900px"))
+          withSpinner(plotOutput("mortality_changes_over_time", height = "800px", width = "1200px"))
         )
       ),
       nav_panel(title = "Plot data",
@@ -203,6 +205,7 @@ page_navbar(
           choices = list(
             "Incident cohort 2011-2015" = "inc_2011_2015",
             "Incident cohort 2016-2021" = "inc_2016_2021",
+            "Prevalent cohort 2015" = "prev_2015",
             "Prevalent cohort 2016" = "prev_2016",
             "Prevalent cohort 2017" = "prev_2017",
             "Prevalent cohort 2018" = "prev_2018",
@@ -269,6 +272,7 @@ page_navbar(
                 choices = list(
                   "Incident cohort 2011-2015" = "inc_2011_2015",
                   "Incident cohort 2016-2021" = "inc_2016_2021",
+                  "Prevalent cohort 2015" = "prev_2015",
                   "Prevalent cohort 2016" = "prev_2016",
                   "Prevalent cohort 2017" = "prev_2017",
                   "Prevalent cohort 2018" = "prev_2018",

@@ -3,8 +3,8 @@ library(bslib)
 library(here)
 library(tidyverse)
 library(DT)
-library(meta)
 library(patchwork)
+library(gt)
 library(shinycssloaders)
 
 # Load helper functions
@@ -449,24 +449,7 @@ function(input, output, session) {
           & substr(var_name, 1, 3) == "def"
         )
       
-      tmp <- metagen(
-        data = tmp,
-        TE = estimate,
-        lower = lcl,
-        upper = ucl,
-        studlab = tmp$var_name_label,
-        common = FALSE,
-        random = FALSE
-      )
-      
-      forest(
-        tmp,
-        sortvar = -estimate,
-        leftcols = "var_name_label",
-        leftlabs = "Brain disorder",
-        rightcols = "est_ci",
-        rightlabs = "Estimate (95% CI)"
-      )
+      cost_regression_forestplot(tmp)
         
     })
     
@@ -479,25 +462,8 @@ function(input, output, session) {
           & model == "cci"
           & substr(var_name, 1, 3) == "def"
         )
-      
-      tmp <- metagen(
-        data = tmp,
-        TE = estimate,
-        lower = lcl,
-        upper = ucl,
-        studlab = tmp$var_name_label,
-        common = FALSE,
-        random = FALSE
-      )
-      
-      forest(
-        tmp,
-        sortvar = -estimate,
-        leftcols = "var_name_label",
-        leftlabs = "Brain disorder",
-        rightcols = "est_ci",
-        rightlabs = "Estimate (95% CI)"
-      )
+          
+      cost_regression_forestplot(tmp)
         
     })
     
@@ -515,105 +481,18 @@ function(input, output, session) {
         filter(
           var_def == input$mortality_forest_var_def_id
           & population == input$mortality_forest_population_id
-        ) %>%
-        mutate(
-          death_pct = paste0(
-            formatC(deaths_n, digits = 0, format = "f", big.mark = ","),
-            " (",
-            formatC(deaths_prop * 100, digits = 1, format = "f", big.mark = ","),
-            ")"
-          ),
-          hr_ci = paste0(
-            formatC(hr, digits = 1, format = "f"),
-            " (",
-            formatC(hr_lcl, digits = 1, format = "f"),
-            "-",
-            formatC(hr_ucl, digits = 1, format = "f"),
-            ")"
-          ) 
-        ) %>%
-        select(var_def_label, population_label, var_name_label, var_name, case, death_pct, hr, hr_lcl, hr_ucl, hr_ci)
-
-      # Restructure for forestplot
-      tmp <- tmp %>%
-        pivot_wider(
-          names_from = case,
-          values_from = c(death_pct, hr, hr_lcl, hr_ucl, hr_ci)
-        ) %>%
-        select(-c(hr_0, hr_lcl_0, hr_ucl_0, hr_ci_0)) %>%
-        mutate(
-          sort_var = case_when(
-            str_ends(var_name, "_00") ~ hr_1 + 1000,
-            TRUE ~ hr_1
-          )
-        )
-  
-      tmp <- metagen(
-        data = tmp,
-        TE = log(hr_1),
-        lower = log(hr_lcl_1),
-        upper = log(hr_ucl_1),
-        sm = "HR",
-        studlab = tmp$var_name_label,
-        common = FALSE,
-        random = FALSE
-      )  
+        ) 
       
-      forest(
-        tmp,
-        sortvar = -sort_var,
-        leftcols = c("var_name_label", "death_pct_1", "death_pct_0"),
-        leftlabs = c("Brain disorder", "Patient group -Deaths (%)", "Comparison group- Deaths (%)"),
-        rightcols = c("hr_ci_1"),
-        rightlabs = "Adjusted hazard ratio (95% CI)"
-      )
+      mortality_forestplot(tmp)
     
     })
     
     #### output$mortality_changes_over_time ####
     output$mortality_changes_over_time <- renderPlot({
       tmp <- risk_cox %>%
-        filter(var_def == input$mortality_over_time_var_def_id & case == "1") 
+        filter(var_def == input$mortality_over_time_var_def_id) 
       
-      # Order by highest incidence rate
-      tmp_order <- tmp %>%
-        filter(population == "inc_2016_2021") %>%
-        arrange(hr)
-      
-      tmp <- tmp %>%
-        mutate(
-          var_name_label = factor(var_name_label, tmp_order$var_name_label),
-          var_name_label = fct_relevel(var_name_label, "Any brain disorder", after = Inf),
-          population = factor(
-            population,
-            levels = c("inc_2011_2015", "inc_2016_2021"),
-            labels = c("Incident cohort 2011-2015", "incident cohort 2016-2021")
-          )
-        )
-        
-      tmp %>%
-        ggplot(aes(x = hr, y = var_name_label, xmin = hr_lcl, xmax = hr_ucl, colour = population)) +
-        geom_linerange(position = position_dodge(width = 0.5)) +
-        geom_point(position = position_dodge(width = 0.5)) +
-        scale_x_continuous(breaks = c(0.1, 0.5, 1, 2, 5, 10, 20), trans = "log") +
-        theme_bw() +
-        labs(
-          title = var_def_label(input$mortality_over_time_var_def_id),
-          subtitle = "Comparison of 1-year mortality in 2011-2015 and 2016-2021 incident cohorts",
-          x = "HR",
-          y = NULL,
-          colour = "Population"
-        ) +
-        theme(
-          plot.title = element_text(size = 20),
-          plot.subtitle = element_text(size = 18),
-          panel.border = element_blank(),
-          axis.text = element_text(size = 14),
-          legend.text = element_text(size = 12),
-          axis.line = element_line(colour = "black"),
-          panel.grid.minor.x = element_blank(),
-          legend.position = "bottom"
-        )
+      mortality_changes_over_time_forestplot(tmp)
     })
     
     #### output$mortality_table ####
@@ -694,8 +573,10 @@ function(input, output, session) {
           colour = "Group"
         )
       
-      plot_surv + plot_lml_surv +
-        plot_layout(guides = "collect") &
+      plot_surv + plot_lml_surv  &
+        # patchwork version v1.3.0 has unfortunately introduced a bug
+        # making guides = "collect" return an error.
+        # plot_layout(guides = "collect") &
         theme_bw() &
         theme(
           plot.title = element_text(size = 14),
@@ -832,23 +713,38 @@ function(input, output, session) {
           var_def == input$prev_inc_table_var_def_id
           & population == input$prev_inc_table_population_id
         ) %>%
-        mutate( prev_inc = n_diag / risk_time) %>%
-        select(var_def_label, population_label, var_name_label, prev_inc) %>%
+        mutate(
+          prev_inc = n_diag / risk_time,
+          risk_time = formatC(risk_time, digits = 0, format = "f", big.mark = ","),
+          n_diag = formatC(n_diag, digits = 0, format = "f", big.mark = ",")
+        ) %>%
+        select(
+          var_def_label, population_label, var_name_label, n_diag,
+          risk_time, prev_inc
+        ) %>%
         rename(
           "Brain disease defintion" = var_def_label,
           "Population" = population_label,
-          "Brain disease" = var_name_label
+          "Brain disease" = var_name_label,
+          "Diagnoses, N" = n_diag
         )
       
       if (word(input$prev_inc_table_population_id, sep = fixed("_")) == "inc") {
         tmp <- tmp %>%
-          mutate(prev_inc = prev_inc * 10**5) %>%
-          rename("Incidence per 100,000 person-years" = prev_inc)
+          mutate(
+            prev_inc = prev_inc * 10**5) %>%
+          rename(
+            "Person-years" = risk_time,
+            "Incidence per 100,000 person-years" = prev_inc
+          )
           
       } else if (word(input$prev_inc_table_population_id, sep = fixed("_")) == "prev") {
         tmp <- tmp %>%
           mutate(prev_inc = prev_inc *100) %>%
-          rename("Prevalence (%)" = prev_inc)
+          rename(
+            "Persons, N" = risk_time,
+            "Prevalence (%)" = prev_inc
+          )
       }
       
       tmp

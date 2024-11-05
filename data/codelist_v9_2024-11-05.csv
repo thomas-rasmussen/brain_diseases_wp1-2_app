@@ -1,0 +1,992 @@
+group|var_name|var_label|var_type|var_level|t0_var|time_start|time_end|code_type|code_include|code_exclude|notes
+misc|studyperiod||custom|||1995-01-01|2022-12-31||||Start and end of studyperiod.
+misc|eur_to_dkk||custom||||||7.4509||EUR to DKK exchange rate used in the study. EU centralbank average value in 2023.
+misc|speciale_labels||custom||||||01||Intern medicin
+misc|speciale_labels||custom||||||02||Geriatri
+misc|speciale_labels||custom||||||03||Hepatologi
+misc|speciale_labels||custom||||||04||Hæmatologi
+misc|speciale_labels||custom||||||05||Infektionsmedicin
+misc|speciale_labels||custom||||||06||Kardiologi
+misc|speciale_labels||custom||||||07||Medicinsk allergologi
+misc|speciale_labels||custom||||||08||Medicinsk endokrinologi
+misc|speciale_labels||custom||||||09||Medicinsk gastroenterologi
+misc|speciale_labels||custom||||||10||Lungesygdomme
+misc|speciale_labels||custom||||||11||Nefrologi
+misc|speciale_labels||custom||||||12||Reumatologi
+misc|speciale_labels||custom||||||14||Palliativ medicin
+misc|speciale_labels||custom||||||15||Akut medicin
+misc|speciale_labels||custom||||||18||Dermato-venerologi
+misc|speciale_labels||custom||||||20||Neurologi
+misc|speciale_labels||custom||||||22||Klinisk onkologi
+misc|speciale_labels||custom||||||30||Kirurgi
+misc|speciale_labels||custom||||||31||Karkirurgi
+misc|speciale_labels||custom||||||32||Kirurgisk gastroenterologi
+misc|speciale_labels||custom||||||33||Plastikkirurgi
+misc|speciale_labels||custom||||||34||Thoraxkirurgi
+misc|speciale_labels||custom||||||35||Urologi
+misc|speciale_labels||custom||||||38||Gynækologi og obstetrik
+misc|speciale_labels||custom||||||39||Sexologi
+misc|speciale_labels||custom||||||40||Neurokirurgi
+misc|speciale_labels||custom||||||42||Ortopædisk kirurgi
+misc|speciale_labels||custom||||||44||Oftalmologi
+misc|speciale_labels||custom||||||46||Oto-, rhino-, laryngologi
+misc|speciale_labels||custom||||||48||Tand-, mund- og kæbekirurgi
+misc|speciale_labels||custom||||||50||Psykiatri
+misc|speciale_labels||custom||||||52||Børne- og ungdomspsykiatri
+misc|speciale_labels||custom||||||60||Klinisk biokemi
+misc|speciale_labels||custom||||||61||Klinisk fysiologi og nuklearmedicin
+misc|speciale_labels||custom||||||62||Klinisk immunologi
+misc|speciale_labels||custom||||||63||Klinisk mikrobiologi
+misc|speciale_labels||custom||||||64||Klinisk neurofysiologi
+misc|speciale_labels||custom||||||65||Patologisk anatomi
+misc|speciale_labels||custom||||||66||Radiologi
+misc|speciale_labels||custom||||||67||Klinisk farmakologi
+misc|speciale_labels||custom||||||68||Klinisk genetik
+misc|speciale_labels||custom||||||80||Pædiatri
+misc|speciale_labels||custom||||||84||Anæstesiologi
+misc|speciale_labels||custom||||||86||Arbejdsmedicin
+misc|speciale_labels||custom||||||90||Almen medicin
+misc|speciale_labels||custom||||||91||Samfundsmedicin
+misc|speciale_labels||custom||||||92||Retsmedicin
+misc|speciale_labels||custom||||||98||Fysio- og ergoterapi
+misc|speciale_labels||custom||||||99||Afsnit som ikke lader sig klassificere
+misc|speciale_labels||custom||||||00||Blandet medicin
+population|inc_2011_2015||custom|||2011-01-01|2015-12-31||||
+population|inc_2016_2021||custom|||2016-01-01|2021-12-31||||
+population|prev_2015||custom|||2015-01-01|2015-12-31||||
+population|prev_2016||custom|||2016-01-01|2016-12-31||||
+population|prev_2017||custom|||2017-01-01|2017-12-31||||
+population|prev_2018||custom|||2018-01-01|2018-12-31||||
+population|prev_2019||custom|||2019-01-01|2019-12-31||||
+population|prev_2020||custom|||2020-01-01|2020-12-31||||
+population|prev_2021||custom|||2021-01-01|2021-12-31||||
+var_def01|def01_00|Any brain disorder|custom||||||||def01: definitions using only LPR diagnoses
+var_def01|def01_01|Alcohol abuse||||||icd10|F10 E244 G312 G621 G721 I426 K292 K70 K852 K860 Q860|F100|
+var_def01|def01_02|Anxiety disorders||||||icd10|F40 F41 F42||
+var_def01|def01_03|Bipolar disorder||||||icd10|F30 F31||
+var_def01|def01_04|Brain tumors||||||icd10|C70 C71 C72 D32 D33 D42 D43||
+var_def01|def01_05|Cerebral palsy||||||icd10|G80||
+var_def01|def01_06|Dementia||||||icd10|F00 F01 F02 F03 G30 G310B G311 G318 G319||
+var_def01|def01_07|Depression||||||icd10|F32 F33||
+var_def01|def01_08|Developmental and behavioural disorders||||||icd10|F84 F9|F99|
+var_def01|def01_09|Drug abuse||||||icd10|F1|F10 F17|
+var_def01|def01_10|Eating disorders||||||icd10|F500 F501 F502 F503||
+var_def01|def01_11|Epilepsy||||||icd10|G40||
+var_def01|def01_12|Headache||||||icd10|G43 G44||
+var_def01|def01_13|Infections of the CNS||||||icd10|G0 A17 A321 A327 A390 A521 A522 A523 A692 A83 A84 A85 A87 A89    B003 B004 B010 B011 B020 B021 B582 B451 B375|G08 G09|
+var_def01|def01_14|Intellectual disability||||||icd10|F7 Q90 Q992||
+var_def01|def01_15|Multiple sclerosis||||||icd10|G35||
+var_def01|def01_16|Neuromuscular disorders||||||icd10|G70 G71 G72 G73||
+var_def01|def01_17|Other neurodegenerative disorders||||||icd10|G10 G11 G122G G13 G14|G130 G139|
+var_def01|def01_18|Parkinson’s disease||||||icd10|G20 G23||
+var_def01|def01_19|Personality disorders||||||icd10|F60||
+var_def01|def01_20|Polyneuropathy||||||icd10|G60 G61 G62 G63 G64 G130||
+var_def01|def01_21|Schizophrenia spectrum disorders||||||icd10|F2||
+var_def01|def01_22|Sleep disorders||||||icd10|F51 G470 G471 G473 G474||
+var_def01|def01_23|Stress related disorders||||||icd10|F43||
+var_def01|def01_24|Stroke||||||icd10|I60 I61 I63 I64|I608|
+var_def01|def01_25|Traumatic brain injury||||||icd10|S020 S021 S027 S029 S06||
+var_def02|def02_00|Any brain disorder|custom||||||||def02: definitions using both LPR diagnoses, and redeemed prescription    and associated indication codes.
+var_def02|def02_01|Alcohol abuse||||||icd10|F10 E244 G312 G621 G721 I426 K292 K70 K852 K860 Q860|F100|
+var_def02|def02_01|Alcohol abuse||||||atc|V03AA N07BB||
+var_def02|def02_01|Alcohol abuse||||||indo|||
+var_def02|def02_02|Anxiety disorders||||||icd10|F40 F41 F42||
+var_def02|def02_02|Anxiety disorders||||||atc|N06A||
+var_def02|def02_02|Anxiety disorders||||||indo|371 830 163||
+var_def02|def02_03|Bipolar disorder||||||icd10|F30 F31||
+var_def02|def02_03|Bipolar disorder||||||atc|N05AN01||
+var_def02|def02_03|Bipolar disorder||||||indo|||
+var_def02|def02_04|Brain tumors||||||icd10|C70 C71 C72 D32 D33 D42 D43||
+var_def02|def02_04|Brain tumors||||||atc|||
+var_def02|def02_04|Brain tumors||||||indo|||
+var_def02|def02_05|Cerebral palsy||||||icd10|G80||
+var_def02|def02_05|Cerebral palsy||||||atc|||
+var_def02|def02_05|Cerebral palsy||||||indo|||
+var_def02|def02_06|Dementia||||||icd10|F00 F01 F02 F03 G30 G310B G311 G318 G319||
+var_def02|def02_06|Dementia||||||atc|N06D||
+var_def02|def02_06|Dementia||||||indo|330 331 329 838||
+var_def02|def02_07|Depression||||||icd10|F32 F33||
+var_def02|def02_07|Depression||||||atc|N06A||
+var_def02|def02_07|Depression||||||indo|168 270||
+var_def02|def02_08|Developmental and behavioural disorders||||||icd10|F84 F9|F99|
+var_def02|def02_08|Developmental and behavioural disorders||||||atc|||
+var_def02|def02_08|Developmental and behavioural disorders||||||indo|||
+var_def02|def02_09|Drug abuse||||||icd10|F1|F10 F17|
+var_def02|def02_09|Drug abuse||||||atc|N07BC01 N07BC51||
+var_def02|def02_09|Drug abuse||||||indo|||
+var_def02|def02_10|Eating disorders||||||icd10|F500 F501 F502 F503||
+var_def02|def02_10|Eating disorders||||||atc|||
+var_def02|def02_10|Eating disorders||||||indo|||
+var_def02|def02_11|Epilepsy||||||icd10|G40||
+var_def02|def02_11|Epilepsy||||||atc|||
+var_def02|def02_11|Epilepsy||||||indo|||
+var_def02|def02_12|Headache||||||icd10|G43 G44||
+var_def02|def02_12|Headache||||||atc|N02C||
+var_def02|def02_12|Headache||||||indo|56 269 153||
+var_def02|def02_13|Infections of the CNS||||||icd10|G0 A17 A321 A327 A390 A521 A522 A523 A692 A83 A84 A85 A87 A89    B003 B004 B010 B011 B020 B021 B582 B451 B375|G08 G09|
+var_def02|def02_13|Infections of the CNS||||||atc|||
+var_def02|def02_13|Infections of the CNS||||||indo|||
+var_def02|def02_14|Intellectual disability||||||icd10|F7 Q90 Q992||
+var_def02|def02_14|Intellectual disability||||||atc|||
+var_def02|def02_14|Intellectual disability||||||indo|||
+var_def02|def02_15|Multiple sclerosis||||||icd10|G35||
+var_def02|def02_15|Multiple sclerosis||||||atc|||
+var_def02|def02_15|Multiple sclerosis||||||indo|||
+var_def02|def02_16|Neuromuscular disorders||||||icd10|G70 G71 G72 G73||
+var_def02|def02_16|Neuromuscular disorders||||||atc|||
+var_def02|def02_16|Neuromuscular disorders||||||indo|||
+var_def02|def02_17|Other neurodegenerative disorders||||||icd10|G10 G11 G122G G13 G14|G130 G139|
+var_def02|def02_17|Other neurodegenerative disorders||||||atc|||
+var_def02|def02_17|Other neurodegenerative disorders||||||indo|||
+var_def02|def02_18|Parkinson’s disease||||||icd10|G20 G23||
+var_def02|def02_18|Parkinson’s disease||||||atc|N04BA N04BB N04BD N04BX||
+var_def02|def02_18|Parkinson’s disease||||||indo|||
+var_def02|def02_19|Personality disorders||||||icd10|F60||
+var_def02|def02_19|Personality disorders||||||atc|||
+var_def02|def02_19|Personality disorders||||||indo|||
+var_def02|def02_20|Polyneuropathy||||||icd10|G60 G61 G62 G63 G64 G130||
+var_def02|def02_20|Polyneuropathy||||||atc|||
+var_def02|def02_20|Polyneuropathy||||||indo|||
+var_def02|def02_21|Schizophrenia spectrum disorders||||||icd10|F2||
+var_def02|def02_21|Schizophrenia spectrum disorders||||||atc|||
+var_def02|def02_21|Schizophrenia spectrum disorders||||||indo|||
+var_def02|def02_22|Sleep disorders||||||icd10|F51 G470 G471 G473 G474||
+var_def02|def02_22|Sleep disorders||||||atc|N05CF01 N05CH01||
+var_def02|def02_22|Sleep disorders||||||indo|372 165 166 373 170||
+var_def02|def02_23|Stress related disorders||||||icd10|F43||
+var_def02|def02_23|Stress related disorders||||||atc|||
+var_def02|def02_23|Stress related disorders||||||indo|||
+var_def02|def02_24|Stroke||||||icd10|I60 I61 I63 I64|I608|
+var_def02|def02_24|Stroke||||||atc|||
+var_def02|def02_24|Stroke||||||indo|||
+var_def02|def02_25|Traumatic brain injury||||||icd10|S020 S021 S027 S029 S06||
+var_def02|def02_25|Traumatic brain injury||||||atc|||
+var_def02|def02_25|Traumatic brain injury||||||indo|||
+var_def03|def03_00|Any brain disorder|custom||||||||def03: Variation of def02 definitions
+var_def03|def03_01|Alcohol abuse||||||icd10|F10 E244 G312 G621 G721 I426    K292 K70 K852 K860 Q860 Z502 Z714|F100|
+var_def03|def03_01|Alcohol abuse||||||atc|V03AA N07BB||
+var_def03|def03_01|Alcohol abuse||||||indo|||
+var_def03|def03_02|Anxiety disorders||||||icd10|F40 F41 F42||
+var_def03|def03_02|Anxiety disorders||||||atc|N06A||
+var_def03|def03_02|Anxiety disorders||||||indo|371 830 163||
+var_def03|def03_03|Bipolar disorder||||||icd10|F30 F31||
+var_def03|def03_03|Bipolar disorder||||||atc|N05AN01||
+var_def03|def03_03|Bipolar disorder||||||indo|||
+var_def03|def03_04|Brain tumors||||||icd10|C70 C71 C72 D32 D33 D42 D43||
+var_def03|def03_04|Brain tumors||||||atc|||
+var_def03|def03_04|Brain tumors||||||indo|||
+var_def03|def03_05|Cerebral palsy||||||icd10|G80||
+var_def03|def03_05|Cerebral palsy||||||atc|||
+var_def03|def03_05|Cerebral palsy||||||indo|||
+var_def03|def03_06|Dementia||||||icd10|B220A F00 F01 F02 F03    F1073 F1173 F1273 F1373 F1473 F1573 F1673 F1873 F1973    G30 G310B G311 G318 G319||
+var_def03|def03_06|Dementia||||||atc|N06D||
+var_def03|def03_06|Dementia||||||indo|||
+var_def03|def03_07|Depression||||||icd10|F32 F33||
+var_def03|def03_07|Depression||||||atc|N06A||
+var_def03|def03_07|Depression||||||indo|168 270||
+var_def03|def03_08|Developmental and behavioural disorders||||||icd10|F84 F9|F99|
+var_def03|def03_08|Developmental and behavioural disorders||||||atc|N06BA02 N06BA04 N06BA09 NA06BA12 C02AC02||
+var_def03|def03_08|Developmental and behavioural disorders||||||indo|375 376 391||
+var_def03|def03_09|Drug abuse||||||icd10|F1 Z722 Z8644|F10 F110 F130 F17 F180|
+var_def03|def03_09|Drug abuse||||||atc|N07BC01 N07BC51||
+var_def03|def03_09|Drug abuse||||||indo|||
+var_def03|def03_10|Eating disorders||||||icd10|F500 F501 F502 F503||
+var_def03|def03_10|Eating disorders||||||atc|||
+var_def03|def03_10|Eating disorders||||||indo|||
+var_def03|def03_11|Epilepsy||||||icd10|G40||
+var_def03|def03_11|Epilepsy||||||atc|||
+var_def03|def03_11|Epilepsy||||||indo|||
+var_def03|def03_12|Headache||||||icd10|G43 G44||
+var_def03|def03_12|Headache||||||atc|N02C||
+var_def03|def03_12|Headache||||||indo|||
+var_def03|def03_13|Infections of the CNS||||||icd10|G0 A17 A321 A390 A521 A522 A523 A83 A84 A85 A87 A89    B003 B004 B010 B011 B020 B021 B582 B451 B375|G08 G09|
+var_def03|def03_13|Infections of the CNS||||||atc|||
+var_def03|def03_13|Infections of the CNS||||||indo|||
+var_def03|def03_14|Intellectual disability||||||icd10|F7 Q90 Q992||
+var_def03|def03_14|Intellectual disability||||||atc|||
+var_def03|def03_14|Intellectual disability||||||indo|||
+var_def03|def03_15|Multiple sclerosis||||||icd10|G35||
+var_def03|def03_15|Multiple sclerosis||||||atc|||
+var_def03|def03_15|Multiple sclerosis||||||indo|||
+var_def03|def03_16|Neuromuscular disorders||||||icd10|G70 G71 G72 G73||
+var_def03|def03_16|Neuromuscular disorders||||||atc|||
+var_def03|def03_16|Neuromuscular disorders||||||indo|||
+var_def03|def03_17|Other neurodegenerative disorders||||||icd10|G10 G11 G12 G13 G14|G130 G139|
+var_def03|def03_17|Other neurodegenerative disorders||||||atc|||
+var_def03|def03_17|Other neurodegenerative disorders||||||indo|||
+var_def03|def03_18|Parkinson’s disease||||||icd10|G20 G23||
+var_def03|def03_18|Parkinson’s disease||||||atc|N04BA N04BB N04BD N04BX||
+var_def03|def03_18|Parkinson’s disease||||||indo|||
+var_def03|def03_19|Personality disorders||||||icd10|F60||
+var_def03|def03_19|Personality disorders||||||atc|||
+var_def03|def03_19|Personality disorders||||||indo|||
+var_def03|def03_20|Polyneuropathy||||||icd10|G60 G61 G62 G63 G64 G130||
+var_def03|def03_20|Polyneuropathy||||||atc|||
+var_def03|def03_20|Polyneuropathy||||||indo|||
+var_def03|def03_21|Schizophrenia spectrum disorders||||||icd10|F2||
+var_def03|def03_21|Schizophrenia spectrum disorders||||||atc|||
+var_def03|def03_21|Schizophrenia spectrum disorders||||||indo|||
+var_def03|def03_22|Sleep disorders||||||icd10|F51 G470 G471 G473 G474||
+var_def03|def03_22|Sleep disorders||||||atc|N05CF01 N05CH01 N06BA07 N06BA14 N07XX04 N07XX11||
+var_def03|def03_22|Sleep disorders||||||indo|||
+var_def03|def03_23|Stress related disorders||||||icd10|F43||
+var_def03|def03_23|Stress related disorders||||||atc|||
+var_def03|def03_23|Stress related disorders||||||indo|||
+var_def03|def03_24|Stroke||||||icd10|I60 I61 I63 I64|I608|
+var_def03|def03_24|Stroke||||||atc|||
+var_def03|def03_24|Stroke||||||indo|||
+var_def03|def03_25|Traumatic brain injury||||||icd10|F072 S020 S021 S027 S029 S06||
+var_def03|def03_25|Traumatic brain injury||||||atc|||
+var_def03|def03_25|Traumatic brain injury||||||indo|||
+var_def04|def04_00|Any brain disorder|custom|||||icd10|A17 A321 A390 A521 A522 A523 A83 A84 A85 A87 A89    B003 B004 B010 B011 B020 B021 B220A B375 B582 B451    C70 C71 C72    D32 D33 D42 D43    E244     F    G    I426 I60 I61 I63 I64    K292 K70 K852 K860    Q860 Q90 Q992    S020 S021 S027 S029 S06    Z502 Z714 Z722 Z8644|I608|def04: Broader definitions, including use of SSSY.
+var_def04|def04_00|Any brain disorder|custom|||||atc|C02AC02    N02C    N04BA N04BB N04BD N04BX    N05AN01 N05CF01 N05CH01    N06A N06BA02 N06BA04 N06BA07 N06BA09 N06BA12 N06BA14 N06D    N07BB N07BC01 N07BC51 N07XX04 N07XX11    V03AA||def04: Broader definitions, including use of SSSY.
+var_def04|def04_00|Any brain disorder|custom|||||sssy|18 24 26 35 63||def04: Broader definitions, including use of SSSY.
+var_pop|def01_00#inc_2011_2015|||||||custom|||
+var_pop|def01_00#inc_2016_2021|||||||custom|||
+var_pop|def01_00#prev_2015|||||||custom|||
+var_pop|def01_00#prev_2016|||||||custom|||
+var_pop|def01_00#prev_2017|||||||custom|||
+var_pop|def01_00#prev_2018|||||||custom|||
+var_pop|def01_00#prev_2019|||||||custom|||
+var_pop|def01_00#prev_2020|||||||custom|||
+var_pop|def01_00#prev_2021|||||||custom|||
+var_pop|def01_01#inc_2011_2015|||||||custom|||
+var_pop|def01_01#inc_2016_2021|||||||custom|||
+var_pop|def01_01#prev_2015|||||||custom|||
+var_pop|def01_01#prev_2016|||||||custom|||
+var_pop|def01_01#prev_2017|||||||custom|||
+var_pop|def01_01#prev_2018|||||||custom|||
+var_pop|def01_01#prev_2019|||||||custom|||
+var_pop|def01_01#prev_2020|||||||custom|||
+var_pop|def01_01#prev_2021|||||||custom|||
+var_pop|def01_02#inc_2011_2015|||||||custom|||
+var_pop|def01_02#inc_2016_2021|||||||custom|||
+var_pop|def01_02#prev_2015|||||||custom|||
+var_pop|def01_02#prev_2016|||||||custom|||
+var_pop|def01_02#prev_2017|||||||custom|||
+var_pop|def01_02#prev_2018|||||||custom|||
+var_pop|def01_02#prev_2019|||||||custom|||
+var_pop|def01_02#prev_2020|||||||custom|||
+var_pop|def01_02#prev_2021|||||||custom|||
+var_pop|def01_03#inc_2011_2015|||||||custom|||
+var_pop|def01_03#inc_2016_2021|||||||custom|||
+var_pop|def01_03#prev_2015|||||||custom|||
+var_pop|def01_03#prev_2016|||||||custom|||
+var_pop|def01_03#prev_2017|||||||custom|||
+var_pop|def01_03#prev_2018|||||||custom|||
+var_pop|def01_03#prev_2019|||||||custom|||
+var_pop|def01_03#prev_2020|||||||custom|||
+var_pop|def01_03#prev_2021|||||||custom|||
+var_pop|def01_04#inc_2011_2015|||||||custom|||
+var_pop|def01_04#inc_2016_2021|||||||custom|||
+var_pop|def01_04#prev_2015|||||||custom|||
+var_pop|def01_04#prev_2016|||||||custom|||
+var_pop|def01_04#prev_2017|||||||custom|||
+var_pop|def01_04#prev_2018|||||||custom|||
+var_pop|def01_04#prev_2019|||||||custom|||
+var_pop|def01_04#prev_2020|||||||custom|||
+var_pop|def01_04#prev_2021|||||||custom|||
+var_pop|def01_05#inc_2011_2015|||||||custom|||
+var_pop|def01_05#inc_2016_2021|||||||custom|||
+var_pop|def01_05#prev_2015|||||||custom|||
+var_pop|def01_05#prev_2016|||||||custom|||
+var_pop|def01_05#prev_2017|||||||custom|||
+var_pop|def01_05#prev_2018|||||||custom|||
+var_pop|def01_05#prev_2019|||||||custom|||
+var_pop|def01_05#prev_2020|||||||custom|||
+var_pop|def01_05#prev_2021|||||||custom|||
+var_pop|def01_06#inc_2011_2015|||||||custom|||
+var_pop|def01_06#inc_2016_2021|||||||custom|||
+var_pop|def01_06#prev_2015|||||||custom|||
+var_pop|def01_06#prev_2016|||||||custom|||
+var_pop|def01_06#prev_2017|||||||custom|||
+var_pop|def01_06#prev_2018|||||||custom|||
+var_pop|def01_06#prev_2019|||||||custom|||
+var_pop|def01_06#prev_2020|||||||custom|||
+var_pop|def01_06#prev_2021|||||||custom|||
+var_pop|def01_07#inc_2011_2015|||||||custom|||
+var_pop|def01_07#inc_2016_2021|||||||custom|||
+var_pop|def01_07#prev_2015|||||||custom|||
+var_pop|def01_07#prev_2016|||||||custom|||
+var_pop|def01_07#prev_2017|||||||custom|||
+var_pop|def01_07#prev_2018|||||||custom|||
+var_pop|def01_07#prev_2019|||||||custom|||
+var_pop|def01_07#prev_2020|||||||custom|||
+var_pop|def01_07#prev_2021|||||||custom|||
+var_pop|def01_08#inc_2011_2015|||||||custom|||
+var_pop|def01_08#inc_2016_2021|||||||custom|||
+var_pop|def01_08#prev_2015|||||||custom|||
+var_pop|def01_08#prev_2016|||||||custom|||
+var_pop|def01_08#prev_2017|||||||custom|||
+var_pop|def01_08#prev_2018|||||||custom|||
+var_pop|def01_08#prev_2019|||||||custom|||
+var_pop|def01_08#prev_2020|||||||custom|||
+var_pop|def01_08#prev_2021|||||||custom|||
+var_pop|def01_09#inc_2011_2015|||||||custom|||
+var_pop|def01_09#inc_2016_2021|||||||custom|||
+var_pop|def01_09#prev_2015|||||||custom|||
+var_pop|def01_09#prev_2016|||||||custom|||
+var_pop|def01_09#prev_2017|||||||custom|||
+var_pop|def01_09#prev_2018|||||||custom|||
+var_pop|def01_09#prev_2019|||||||custom|||
+var_pop|def01_09#prev_2020|||||||custom|||
+var_pop|def01_09#prev_2021|||||||custom|||
+var_pop|def01_10#inc_2011_2015|||||||custom|||
+var_pop|def01_10#inc_2016_2021|||||||custom|||
+var_pop|def01_10#prev_2015|||||||custom|||
+var_pop|def01_10#prev_2016|||||||custom|||
+var_pop|def01_10#prev_2017|||||||custom|||
+var_pop|def01_10#prev_2018|||||||custom|||
+var_pop|def01_10#prev_2019|||||||custom|||
+var_pop|def01_10#prev_2020|||||||custom|||
+var_pop|def01_10#prev_2021|||||||custom|||
+var_pop|def01_11#inc_2011_2015|||||||custom|||
+var_pop|def01_11#inc_2016_2021|||||||custom|||
+var_pop|def01_11#prev_2015|||||||custom|||
+var_pop|def01_11#prev_2016|||||||custom|||
+var_pop|def01_11#prev_2017|||||||custom|||
+var_pop|def01_11#prev_2018|||||||custom|||
+var_pop|def01_11#prev_2019|||||||custom|||
+var_pop|def01_11#prev_2020|||||||custom|||
+var_pop|def01_11#prev_2021|||||||custom|||
+var_pop|def01_12#inc_2011_2015|||||||custom|||
+var_pop|def01_12#inc_2016_2021|||||||custom|||
+var_pop|def01_12#prev_2015|||||||custom|||
+var_pop|def01_12#prev_2016|||||||custom|||
+var_pop|def01_12#prev_2017|||||||custom|||
+var_pop|def01_12#prev_2018|||||||custom|||
+var_pop|def01_12#prev_2019|||||||custom|||
+var_pop|def01_12#prev_2020|||||||custom|||
+var_pop|def01_12#prev_2021|||||||custom|||
+var_pop|def01_13#inc_2011_2015|||||||custom|||
+var_pop|def01_13#inc_2016_2021|||||||custom|||
+var_pop|def01_13#prev_2015|||||||custom|||
+var_pop|def01_13#prev_2016|||||||custom|||
+var_pop|def01_13#prev_2017|||||||custom|||
+var_pop|def01_13#prev_2018|||||||custom|||
+var_pop|def01_13#prev_2019|||||||custom|||
+var_pop|def01_13#prev_2020|||||||custom|||
+var_pop|def01_13#prev_2021|||||||custom|||
+var_pop|def01_14#inc_2011_2015|||||||custom|||
+var_pop|def01_14#inc_2016_2021|||||||custom|||
+var_pop|def01_14#prev_2015|||||||custom|||
+var_pop|def01_14#prev_2016|||||||custom|||
+var_pop|def01_14#prev_2017|||||||custom|||
+var_pop|def01_14#prev_2018|||||||custom|||
+var_pop|def01_14#prev_2019|||||||custom|||
+var_pop|def01_14#prev_2020|||||||custom|||
+var_pop|def01_14#prev_2021|||||||custom|||
+var_pop|def01_15#inc_2011_2015|||||||custom|||
+var_pop|def01_15#inc_2016_2021|||||||custom|||
+var_pop|def01_15#prev_2015|||||||custom|||
+var_pop|def01_15#prev_2016|||||||custom|||
+var_pop|def01_15#prev_2017|||||||custom|||
+var_pop|def01_15#prev_2018|||||||custom|||
+var_pop|def01_15#prev_2019|||||||custom|||
+var_pop|def01_15#prev_2020|||||||custom|||
+var_pop|def01_15#prev_2021|||||||custom|||
+var_pop|def01_16#inc_2011_2015|||||||custom|||
+var_pop|def01_16#inc_2016_2021|||||||custom|||
+var_pop|def01_16#prev_2015|||||||custom|||
+var_pop|def01_16#prev_2016|||||||custom|||
+var_pop|def01_16#prev_2017|||||||custom|||
+var_pop|def01_16#prev_2018|||||||custom|||
+var_pop|def01_16#prev_2019|||||||custom|||
+var_pop|def01_16#prev_2020|||||||custom|||
+var_pop|def01_16#prev_2021|||||||custom|||
+var_pop|def01_17#inc_2011_2015|||||||custom|||
+var_pop|def01_17#inc_2016_2021|||||||custom|||
+var_pop|def01_17#prev_2015|||||||custom|||
+var_pop|def01_17#prev_2016|||||||custom|||
+var_pop|def01_17#prev_2017|||||||custom|||
+var_pop|def01_17#prev_2018|||||||custom|||
+var_pop|def01_17#prev_2019|||||||custom|||
+var_pop|def01_17#prev_2020|||||||custom|||
+var_pop|def01_17#prev_2021|||||||custom|||
+var_pop|def01_18#inc_2011_2015|||||||custom|||
+var_pop|def01_18#inc_2016_2021|||||||custom|||
+var_pop|def01_18#prev_2015|||||||custom|||
+var_pop|def01_18#prev_2016|||||||custom|||
+var_pop|def01_18#prev_2017|||||||custom|||
+var_pop|def01_18#prev_2018|||||||custom|||
+var_pop|def01_18#prev_2019|||||||custom|||
+var_pop|def01_18#prev_2020|||||||custom|||
+var_pop|def01_18#prev_2021|||||||custom|||
+var_pop|def01_19#inc_2011_2015|||||||custom|||
+var_pop|def01_19#inc_2016_2021|||||||custom|||
+var_pop|def01_19#prev_2015|||||||custom|||
+var_pop|def01_19#prev_2016|||||||custom|||
+var_pop|def01_19#prev_2017|||||||custom|||
+var_pop|def01_19#prev_2018|||||||custom|||
+var_pop|def01_19#prev_2019|||||||custom|||
+var_pop|def01_19#prev_2020|||||||custom|||
+var_pop|def01_19#prev_2021|||||||custom|||
+var_pop|def01_20#inc_2011_2015|||||||custom|||
+var_pop|def01_20#inc_2016_2021|||||||custom|||
+var_pop|def01_20#prev_2015|||||||custom|||
+var_pop|def01_20#prev_2016|||||||custom|||
+var_pop|def01_20#prev_2017|||||||custom|||
+var_pop|def01_20#prev_2018|||||||custom|||
+var_pop|def01_20#prev_2019|||||||custom|||
+var_pop|def01_20#prev_2020|||||||custom|||
+var_pop|def01_20#prev_2021|||||||custom|||
+var_pop|def01_21#inc_2011_2015|||||||custom|||
+var_pop|def01_21#inc_2016_2021|||||||custom|||
+var_pop|def01_21#prev_2015|||||||custom|||
+var_pop|def01_21#prev_2016|||||||custom|||
+var_pop|def01_21#prev_2017|||||||custom|||
+var_pop|def01_21#prev_2018|||||||custom|||
+var_pop|def01_21#prev_2019|||||||custom|||
+var_pop|def01_21#prev_2020|||||||custom|||
+var_pop|def01_21#prev_2021|||||||custom|||
+var_pop|def01_22#inc_2011_2015|||||||custom|||
+var_pop|def01_22#inc_2016_2021|||||||custom|||
+var_pop|def01_22#prev_2015|||||||custom|||
+var_pop|def01_22#prev_2016|||||||custom|||
+var_pop|def01_22#prev_2017|||||||custom|||
+var_pop|def01_22#prev_2018|||||||custom|||
+var_pop|def01_22#prev_2019|||||||custom|||
+var_pop|def01_22#prev_2020|||||||custom|||
+var_pop|def01_22#prev_2021|||||||custom|||
+var_pop|def01_23#inc_2011_2015|||||||custom|||
+var_pop|def01_23#inc_2016_2021|||||||custom|||
+var_pop|def01_23#prev_2015|||||||custom|||
+var_pop|def01_23#prev_2016|||||||custom|||
+var_pop|def01_23#prev_2017|||||||custom|||
+var_pop|def01_23#prev_2018|||||||custom|||
+var_pop|def01_23#prev_2019|||||||custom|||
+var_pop|def01_23#prev_2020|||||||custom|||
+var_pop|def01_23#prev_2021|||||||custom|||
+var_pop|def01_24#inc_2011_2015|||||||custom|||
+var_pop|def01_24#inc_2016_2021|||||||custom|||
+var_pop|def01_24#prev_2015|||||||custom|||
+var_pop|def01_24#prev_2016|||||||custom|||
+var_pop|def01_24#prev_2017|||||||custom|||
+var_pop|def01_24#prev_2018|||||||custom|||
+var_pop|def01_24#prev_2019|||||||custom|||
+var_pop|def01_24#prev_2020|||||||custom|||
+var_pop|def01_24#prev_2021|||||||custom|||
+var_pop|def01_25#inc_2011_2015|||||||custom|||
+var_pop|def01_25#inc_2016_2021|||||||custom|||
+var_pop|def01_25#prev_2015|||||||custom|||
+var_pop|def01_25#prev_2016|||||||custom|||
+var_pop|def01_25#prev_2017|||||||custom|||
+var_pop|def01_25#prev_2018|||||||custom|||
+var_pop|def01_25#prev_2019|||||||custom|||
+var_pop|def01_25#prev_2020|||||||custom|||
+var_pop|def01_25#prev_2021|||||||custom|||
+var_pop|def02_00#inc_2011_2015|||||||custom|||
+var_pop|def02_00#inc_2016_2021|||||||custom|||
+var_pop|def02_00#prev_2015|||||||custom|||
+var_pop|def02_00#prev_2016|||||||custom|||
+var_pop|def02_00#prev_2017|||||||custom|||
+var_pop|def02_00#prev_2018|||||||custom|||
+var_pop|def02_00#prev_2019|||||||custom|||
+var_pop|def02_00#prev_2020|||||||custom|||
+var_pop|def02_00#prev_2021|||||||custom|||
+var_pop|def02_01#inc_2011_2015|||||||custom|||
+var_pop|def02_01#inc_2016_2021|||||||custom|||
+var_pop|def02_01#prev_2015|||||||custom|||
+var_pop|def02_01#prev_2016|||||||custom|||
+var_pop|def02_01#prev_2017|||||||custom|||
+var_pop|def02_01#prev_2018|||||||custom|||
+var_pop|def02_01#prev_2019|||||||custom|||
+var_pop|def02_01#prev_2020|||||||custom|||
+var_pop|def02_01#prev_2021|||||||custom|||
+var_pop|def02_02#inc_2011_2015|||||||custom|||
+var_pop|def02_02#inc_2016_2021|||||||custom|||
+var_pop|def02_02#prev_2015|||||||custom|||
+var_pop|def02_02#prev_2016|||||||custom|||
+var_pop|def02_02#prev_2017|||||||custom|||
+var_pop|def02_02#prev_2018|||||||custom|||
+var_pop|def02_02#prev_2019|||||||custom|||
+var_pop|def02_02#prev_2020|||||||custom|||
+var_pop|def02_02#prev_2021|||||||custom|||
+var_pop|def02_03#inc_2011_2015|||||||custom|||
+var_pop|def02_03#inc_2016_2021|||||||custom|||
+var_pop|def02_03#prev_2015|||||||custom|||
+var_pop|def02_03#prev_2016|||||||custom|||
+var_pop|def02_03#prev_2017|||||||custom|||
+var_pop|def02_03#prev_2018|||||||custom|||
+var_pop|def02_03#prev_2019|||||||custom|||
+var_pop|def02_03#prev_2020|||||||custom|||
+var_pop|def02_03#prev_2021|||||||custom|||
+var_pop|def02_04#inc_2011_2015|||||||custom|||
+var_pop|def02_04#inc_2016_2021|||||||custom|||
+var_pop|def02_04#prev_2015|||||||custom|||
+var_pop|def02_04#prev_2016|||||||custom|||
+var_pop|def02_04#prev_2017|||||||custom|||
+var_pop|def02_04#prev_2018|||||||custom|||
+var_pop|def02_04#prev_2019|||||||custom|||
+var_pop|def02_04#prev_2020|||||||custom|||
+var_pop|def02_04#prev_2021|||||||custom|||
+var_pop|def02_05#inc_2011_2015|||||||custom|||
+var_pop|def02_05#inc_2016_2021|||||||custom|||
+var_pop|def02_05#prev_2015|||||||custom|||
+var_pop|def02_05#prev_2016|||||||custom|||
+var_pop|def02_05#prev_2017|||||||custom|||
+var_pop|def02_05#prev_2018|||||||custom|||
+var_pop|def02_05#prev_2019|||||||custom|||
+var_pop|def02_05#prev_2020|||||||custom|||
+var_pop|def02_05#prev_2021|||||||custom|||
+var_pop|def02_06#inc_2011_2015|||||||custom|||
+var_pop|def02_06#inc_2016_2021|||||||custom|||
+var_pop|def02_06#prev_2015|||||||custom|||
+var_pop|def02_06#prev_2016|||||||custom|||
+var_pop|def02_06#prev_2017|||||||custom|||
+var_pop|def02_06#prev_2018|||||||custom|||
+var_pop|def02_06#prev_2019|||||||custom|||
+var_pop|def02_06#prev_2020|||||||custom|||
+var_pop|def02_06#prev_2021|||||||custom|||
+var_pop|def02_07#inc_2011_2015|||||||custom|||
+var_pop|def02_07#inc_2016_2021|||||||custom|||
+var_pop|def02_07#prev_2015|||||||custom|||
+var_pop|def02_07#prev_2016|||||||custom|||
+var_pop|def02_07#prev_2017|||||||custom|||
+var_pop|def02_07#prev_2018|||||||custom|||
+var_pop|def02_07#prev_2019|||||||custom|||
+var_pop|def02_07#prev_2020|||||||custom|||
+var_pop|def02_07#prev_2021|||||||custom|||
+var_pop|def02_08#inc_2011_2015|||||||custom|||
+var_pop|def02_08#inc_2016_2021|||||||custom|||
+var_pop|def02_08#prev_2015|||||||custom|||
+var_pop|def02_08#prev_2016|||||||custom|||
+var_pop|def02_08#prev_2017|||||||custom|||
+var_pop|def02_08#prev_2018|||||||custom|||
+var_pop|def02_08#prev_2019|||||||custom|||
+var_pop|def02_08#prev_2020|||||||custom|||
+var_pop|def02_08#prev_2021|||||||custom|||
+var_pop|def02_09#inc_2011_2015|||||||custom|||
+var_pop|def02_09#inc_2016_2021|||||||custom|||
+var_pop|def02_09#prev_2015|||||||custom|||
+var_pop|def02_09#prev_2016|||||||custom|||
+var_pop|def02_09#prev_2017|||||||custom|||
+var_pop|def02_09#prev_2018|||||||custom|||
+var_pop|def02_09#prev_2019|||||||custom|||
+var_pop|def02_09#prev_2020|||||||custom|||
+var_pop|def02_09#prev_2021|||||||custom|||
+var_pop|def02_10#inc_2011_2015|||||||custom|||
+var_pop|def02_10#inc_2016_2021|||||||custom|||
+var_pop|def02_10#prev_2015|||||||custom|||
+var_pop|def02_10#prev_2016|||||||custom|||
+var_pop|def02_10#prev_2017|||||||custom|||
+var_pop|def02_10#prev_2018|||||||custom|||
+var_pop|def02_10#prev_2019|||||||custom|||
+var_pop|def02_10#prev_2020|||||||custom|||
+var_pop|def02_10#prev_2021|||||||custom|||
+var_pop|def02_11#inc_2011_2015|||||||custom|||
+var_pop|def02_11#inc_2016_2021|||||||custom|||
+var_pop|def02_11#prev_2015|||||||custom|||
+var_pop|def02_11#prev_2016|||||||custom|||
+var_pop|def02_11#prev_2017|||||||custom|||
+var_pop|def02_11#prev_2018|||||||custom|||
+var_pop|def02_11#prev_2019|||||||custom|||
+var_pop|def02_11#prev_2020|||||||custom|||
+var_pop|def02_11#prev_2021|||||||custom|||
+var_pop|def02_12#inc_2011_2015|||||||custom|||
+var_pop|def02_12#inc_2016_2021|||||||custom|||
+var_pop|def02_12#prev_2015|||||||custom|||
+var_pop|def02_12#prev_2016|||||||custom|||
+var_pop|def02_12#prev_2017|||||||custom|||
+var_pop|def02_12#prev_2018|||||||custom|||
+var_pop|def02_12#prev_2019|||||||custom|||
+var_pop|def02_12#prev_2020|||||||custom|||
+var_pop|def02_12#prev_2021|||||||custom|||
+var_pop|def02_13#inc_2011_2015|||||||custom|||
+var_pop|def02_13#inc_2016_2021|||||||custom|||
+var_pop|def02_13#prev_2015|||||||custom|||
+var_pop|def02_13#prev_2016|||||||custom|||
+var_pop|def02_13#prev_2017|||||||custom|||
+var_pop|def02_13#prev_2018|||||||custom|||
+var_pop|def02_13#prev_2019|||||||custom|||
+var_pop|def02_13#prev_2020|||||||custom|||
+var_pop|def02_13#prev_2021|||||||custom|||
+var_pop|def02_14#inc_2011_2015|||||||custom|||
+var_pop|def02_14#inc_2016_2021|||||||custom|||
+var_pop|def02_14#prev_2015|||||||custom|||
+var_pop|def02_14#prev_2016|||||||custom|||
+var_pop|def02_14#prev_2017|||||||custom|||
+var_pop|def02_14#prev_2018|||||||custom|||
+var_pop|def02_14#prev_2019|||||||custom|||
+var_pop|def02_14#prev_2020|||||||custom|||
+var_pop|def02_14#prev_2021|||||||custom|||
+var_pop|def02_15#inc_2011_2015|||||||custom|||
+var_pop|def02_15#inc_2016_2021|||||||custom|||
+var_pop|def02_15#prev_2015|||||||custom|||
+var_pop|def02_15#prev_2016|||||||custom|||
+var_pop|def02_15#prev_2017|||||||custom|||
+var_pop|def02_15#prev_2018|||||||custom|||
+var_pop|def02_15#prev_2019|||||||custom|||
+var_pop|def02_15#prev_2020|||||||custom|||
+var_pop|def02_15#prev_2021|||||||custom|||
+var_pop|def02_16#inc_2011_2015|||||||custom|||
+var_pop|def02_16#inc_2016_2021|||||||custom|||
+var_pop|def02_16#prev_2015|||||||custom|||
+var_pop|def02_16#prev_2016|||||||custom|||
+var_pop|def02_16#prev_2017|||||||custom|||
+var_pop|def02_16#prev_2018|||||||custom|||
+var_pop|def02_16#prev_2019|||||||custom|||
+var_pop|def02_16#prev_2020|||||||custom|||
+var_pop|def02_16#prev_2021|||||||custom|||
+var_pop|def02_17#inc_2011_2015|||||||custom|||
+var_pop|def02_17#inc_2016_2021|||||||custom|||
+var_pop|def02_17#prev_2015|||||||custom|||
+var_pop|def02_17#prev_2016|||||||custom|||
+var_pop|def02_17#prev_2017|||||||custom|||
+var_pop|def02_17#prev_2018|||||||custom|||
+var_pop|def02_17#prev_2019|||||||custom|||
+var_pop|def02_17#prev_2020|||||||custom|||
+var_pop|def02_17#prev_2021|||||||custom|||
+var_pop|def02_18#inc_2011_2015|||||||custom|||
+var_pop|def02_18#inc_2016_2021|||||||custom|||
+var_pop|def02_18#prev_2015|||||||custom|||
+var_pop|def02_18#prev_2016|||||||custom|||
+var_pop|def02_18#prev_2017|||||||custom|||
+var_pop|def02_18#prev_2018|||||||custom|||
+var_pop|def02_18#prev_2019|||||||custom|||
+var_pop|def02_18#prev_2020|||||||custom|||
+var_pop|def02_18#prev_2021|||||||custom|||
+var_pop|def02_19#inc_2011_2015|||||||custom|||
+var_pop|def02_19#inc_2016_2021|||||||custom|||
+var_pop|def02_19#prev_2015|||||||custom|||
+var_pop|def02_19#prev_2016|||||||custom|||
+var_pop|def02_19#prev_2017|||||||custom|||
+var_pop|def02_19#prev_2018|||||||custom|||
+var_pop|def02_19#prev_2019|||||||custom|||
+var_pop|def02_19#prev_2020|||||||custom|||
+var_pop|def02_19#prev_2021|||||||custom|||
+var_pop|def02_20#inc_2011_2015|||||||custom|||
+var_pop|def02_20#inc_2016_2021|||||||custom|||
+var_pop|def02_20#prev_2015|||||||custom|||
+var_pop|def02_20#prev_2016|||||||custom|||
+var_pop|def02_20#prev_2017|||||||custom|||
+var_pop|def02_20#prev_2018|||||||custom|||
+var_pop|def02_20#prev_2019|||||||custom|||
+var_pop|def02_20#prev_2020|||||||custom|||
+var_pop|def02_20#prev_2021|||||||custom|||
+var_pop|def02_21#inc_2011_2015|||||||custom|||
+var_pop|def02_21#inc_2016_2021|||||||custom|||
+var_pop|def02_21#prev_2015|||||||custom|||
+var_pop|def02_21#prev_2016|||||||custom|||
+var_pop|def02_21#prev_2017|||||||custom|||
+var_pop|def02_21#prev_2018|||||||custom|||
+var_pop|def02_21#prev_2019|||||||custom|||
+var_pop|def02_21#prev_2020|||||||custom|||
+var_pop|def02_21#prev_2021|||||||custom|||
+var_pop|def02_22#inc_2011_2015|||||||custom|||
+var_pop|def02_22#inc_2016_2021|||||||custom|||
+var_pop|def02_22#prev_2015|||||||custom|||
+var_pop|def02_22#prev_2016|||||||custom|||
+var_pop|def02_22#prev_2017|||||||custom|||
+var_pop|def02_22#prev_2018|||||||custom|||
+var_pop|def02_22#prev_2019|||||||custom|||
+var_pop|def02_22#prev_2020|||||||custom|||
+var_pop|def02_22#prev_2021|||||||custom|||
+var_pop|def02_23#inc_2011_2015|||||||custom|||
+var_pop|def02_23#inc_2016_2021|||||||custom|||
+var_pop|def02_23#prev_2015|||||||custom|||
+var_pop|def02_23#prev_2016|||||||custom|||
+var_pop|def02_23#prev_2017|||||||custom|||
+var_pop|def02_23#prev_2018|||||||custom|||
+var_pop|def02_23#prev_2019|||||||custom|||
+var_pop|def02_23#prev_2020|||||||custom|||
+var_pop|def02_23#prev_2021|||||||custom|||
+var_pop|def02_24#inc_2011_2015|||||||custom|||
+var_pop|def02_24#inc_2016_2021|||||||custom|||
+var_pop|def02_24#prev_2015|||||||custom|||
+var_pop|def02_24#prev_2016|||||||custom|||
+var_pop|def02_24#prev_2017|||||||custom|||
+var_pop|def02_24#prev_2018|||||||custom|||
+var_pop|def02_24#prev_2019|||||||custom|||
+var_pop|def02_24#prev_2020|||||||custom|||
+var_pop|def02_24#prev_2021|||||||custom|||
+var_pop|def02_25#inc_2011_2015|||||||custom|||
+var_pop|def02_25#inc_2016_2021|||||||custom|||
+var_pop|def02_25#prev_2015|||||||custom|||
+var_pop|def02_25#prev_2016|||||||custom|||
+var_pop|def02_25#prev_2017|||||||custom|||
+var_pop|def02_25#prev_2018|||||||custom|||
+var_pop|def02_25#prev_2019|||||||custom|||
+var_pop|def02_25#prev_2020|||||||custom|||
+var_pop|def02_25#prev_2021|||||||custom|||
+var_pop|def03_00#inc_2011_2015|||||||custom|||
+var_pop|def03_00#inc_2016_2021|||||||custom|||
+var_pop|def03_00#prev_2015|||||||custom|||
+var_pop|def03_00#prev_2016|||||||custom|||
+var_pop|def03_00#prev_2017|||||||custom|||
+var_pop|def03_00#prev_2018|||||||custom|||
+var_pop|def03_00#prev_2019|||||||custom|||
+var_pop|def03_00#prev_2020|||||||custom|||
+var_pop|def03_00#prev_2021|||||||custom|||
+var_pop|def03_01#inc_2011_2015|||||||custom|||
+var_pop|def03_01#inc_2016_2021|||||||custom|||
+var_pop|def03_01#prev_2015|||||||custom|||
+var_pop|def03_01#prev_2016|||||||custom|||
+var_pop|def03_01#prev_2017|||||||custom|||
+var_pop|def03_01#prev_2018|||||||custom|||
+var_pop|def03_01#prev_2019|||||||custom|||
+var_pop|def03_01#prev_2020|||||||custom|||
+var_pop|def03_01#prev_2021|||||||custom|||
+var_pop|def03_02#inc_2011_2015|||||||custom|||
+var_pop|def03_02#inc_2016_2021|||||||custom|||
+var_pop|def03_02#prev_2015|||||||custom|||
+var_pop|def03_02#prev_2016|||||||custom|||
+var_pop|def03_02#prev_2017|||||||custom|||
+var_pop|def03_02#prev_2018|||||||custom|||
+var_pop|def03_02#prev_2019|||||||custom|||
+var_pop|def03_02#prev_2020|||||||custom|||
+var_pop|def03_02#prev_2021|||||||custom|||
+var_pop|def03_03#inc_2011_2015|||||||custom|||
+var_pop|def03_03#inc_2016_2021|||||||custom|||
+var_pop|def03_03#prev_2015|||||||custom|||
+var_pop|def03_03#prev_2016|||||||custom|||
+var_pop|def03_03#prev_2017|||||||custom|||
+var_pop|def03_03#prev_2018|||||||custom|||
+var_pop|def03_03#prev_2019|||||||custom|||
+var_pop|def03_03#prev_2020|||||||custom|||
+var_pop|def03_03#prev_2021|||||||custom|||
+var_pop|def03_04#inc_2011_2015|||||||custom|||
+var_pop|def03_04#inc_2016_2021|||||||custom|||
+var_pop|def03_04#prev_2015|||||||custom|||
+var_pop|def03_04#prev_2016|||||||custom|||
+var_pop|def03_04#prev_2017|||||||custom|||
+var_pop|def03_04#prev_2018|||||||custom|||
+var_pop|def03_04#prev_2019|||||||custom|||
+var_pop|def03_04#prev_2020|||||||custom|||
+var_pop|def03_04#prev_2021|||||||custom|||
+var_pop|def03_05#inc_2011_2015|||||||custom|||
+var_pop|def03_05#inc_2016_2021|||||||custom|||
+var_pop|def03_05#prev_2015|||||||custom|||
+var_pop|def03_05#prev_2016|||||||custom|||
+var_pop|def03_05#prev_2017|||||||custom|||
+var_pop|def03_05#prev_2018|||||||custom|||
+var_pop|def03_05#prev_2019|||||||custom|||
+var_pop|def03_05#prev_2020|||||||custom|||
+var_pop|def03_05#prev_2021|||||||custom|||
+var_pop|def03_06#inc_2011_2015|||||||custom|||
+var_pop|def03_06#inc_2016_2021|||||||custom|||
+var_pop|def03_06#prev_2015|||||||custom|||
+var_pop|def03_06#prev_2016|||||||custom|||
+var_pop|def03_06#prev_2017|||||||custom|||
+var_pop|def03_06#prev_2018|||||||custom|||
+var_pop|def03_06#prev_2019|||||||custom|||
+var_pop|def03_06#prev_2020|||||||custom|||
+var_pop|def03_06#prev_2021|||||||custom|||
+var_pop|def03_07#inc_2011_2015|||||||custom|||
+var_pop|def03_07#inc_2016_2021|||||||custom|||
+var_pop|def03_07#prev_2015|||||||custom|||
+var_pop|def03_07#prev_2016|||||||custom|||
+var_pop|def03_07#prev_2017|||||||custom|||
+var_pop|def03_07#prev_2018|||||||custom|||
+var_pop|def03_07#prev_2019|||||||custom|||
+var_pop|def03_07#prev_2020|||||||custom|||
+var_pop|def03_07#prev_2021|||||||custom|||
+var_pop|def03_08#inc_2011_2015|||||||custom|||
+var_pop|def03_08#inc_2016_2021|||||||custom|||
+var_pop|def03_08#prev_2015|||||||custom|||
+var_pop|def03_08#prev_2016|||||||custom|||
+var_pop|def03_08#prev_2017|||||||custom|||
+var_pop|def03_08#prev_2018|||||||custom|||
+var_pop|def03_08#prev_2019|||||||custom|||
+var_pop|def03_08#prev_2020|||||||custom|||
+var_pop|def03_08#prev_2021|||||||custom|||
+var_pop|def03_09#inc_2011_2015|||||||custom|||
+var_pop|def03_09#inc_2016_2021|||||||custom|||
+var_pop|def03_09#prev_2015|||||||custom|||
+var_pop|def03_09#prev_2016|||||||custom|||
+var_pop|def03_09#prev_2017|||||||custom|||
+var_pop|def03_09#prev_2018|||||||custom|||
+var_pop|def03_09#prev_2019|||||||custom|||
+var_pop|def03_09#prev_2020|||||||custom|||
+var_pop|def03_09#prev_2021|||||||custom|||
+var_pop|def03_10#inc_2011_2015|||||||custom|||
+var_pop|def03_10#inc_2016_2021|||||||custom|||
+var_pop|def03_10#prev_2015|||||||custom|||
+var_pop|def03_10#prev_2016|||||||custom|||
+var_pop|def03_10#prev_2017|||||||custom|||
+var_pop|def03_10#prev_2018|||||||custom|||
+var_pop|def03_10#prev_2019|||||||custom|||
+var_pop|def03_10#prev_2020|||||||custom|||
+var_pop|def03_10#prev_2021|||||||custom|||
+var_pop|def03_11#inc_2011_2015|||||||custom|||
+var_pop|def03_11#inc_2016_2021|||||||custom|||
+var_pop|def03_11#prev_2015|||||||custom|||
+var_pop|def03_11#prev_2016|||||||custom|||
+var_pop|def03_11#prev_2017|||||||custom|||
+var_pop|def03_11#prev_2018|||||||custom|||
+var_pop|def03_11#prev_2019|||||||custom|||
+var_pop|def03_11#prev_2020|||||||custom|||
+var_pop|def03_11#prev_2021|||||||custom|||
+var_pop|def03_12#inc_2011_2015|||||||custom|||
+var_pop|def03_12#inc_2016_2021|||||||custom|||
+var_pop|def03_12#prev_2015|||||||custom|||
+var_pop|def03_12#prev_2016|||||||custom|||
+var_pop|def03_12#prev_2017|||||||custom|||
+var_pop|def03_12#prev_2018|||||||custom|||
+var_pop|def03_12#prev_2019|||||||custom|||
+var_pop|def03_12#prev_2020|||||||custom|||
+var_pop|def03_12#prev_2021|||||||custom|||
+var_pop|def03_13#inc_2011_2015|||||||custom|||
+var_pop|def03_13#inc_2016_2021|||||||custom|||
+var_pop|def03_13#prev_2015|||||||custom|||
+var_pop|def03_13#prev_2016|||||||custom|||
+var_pop|def03_13#prev_2017|||||||custom|||
+var_pop|def03_13#prev_2018|||||||custom|||
+var_pop|def03_13#prev_2019|||||||custom|||
+var_pop|def03_13#prev_2020|||||||custom|||
+var_pop|def03_13#prev_2021|||||||custom|||
+var_pop|def03_14#inc_2011_2015|||||||custom|||
+var_pop|def03_14#inc_2016_2021|||||||custom|||
+var_pop|def03_14#prev_2015|||||||custom|||
+var_pop|def03_14#prev_2016|||||||custom|||
+var_pop|def03_14#prev_2017|||||||custom|||
+var_pop|def03_14#prev_2018|||||||custom|||
+var_pop|def03_14#prev_2019|||||||custom|||
+var_pop|def03_14#prev_2020|||||||custom|||
+var_pop|def03_14#prev_2021|||||||custom|||
+var_pop|def03_15#inc_2011_2015|||||||custom|||
+var_pop|def03_15#inc_2016_2021|||||||custom|||
+var_pop|def03_15#prev_2015|||||||custom|||
+var_pop|def03_15#prev_2016|||||||custom|||
+var_pop|def03_15#prev_2017|||||||custom|||
+var_pop|def03_15#prev_2018|||||||custom|||
+var_pop|def03_15#prev_2019|||||||custom|||
+var_pop|def03_15#prev_2020|||||||custom|||
+var_pop|def03_15#prev_2021|||||||custom|||
+var_pop|def03_16#inc_2011_2015|||||||custom|||
+var_pop|def03_16#inc_2016_2021|||||||custom|||
+var_pop|def03_16#prev_2015|||||||custom|||
+var_pop|def03_16#prev_2016|||||||custom|||
+var_pop|def03_16#prev_2017|||||||custom|||
+var_pop|def03_16#prev_2018|||||||custom|||
+var_pop|def03_16#prev_2019|||||||custom|||
+var_pop|def03_16#prev_2020|||||||custom|||
+var_pop|def03_16#prev_2021|||||||custom|||
+var_pop|def03_17#inc_2011_2015|||||||custom|||
+var_pop|def03_17#inc_2016_2021|||||||custom|||
+var_pop|def03_17#prev_2015|||||||custom|||
+var_pop|def03_17#prev_2016|||||||custom|||
+var_pop|def03_17#prev_2017|||||||custom|||
+var_pop|def03_17#prev_2018|||||||custom|||
+var_pop|def03_17#prev_2019|||||||custom|||
+var_pop|def03_17#prev_2020|||||||custom|||
+var_pop|def03_17#prev_2021|||||||custom|||
+var_pop|def03_18#inc_2011_2015|||||||custom|||
+var_pop|def03_18#inc_2016_2021|||||||custom|||
+var_pop|def03_18#prev_2015|||||||custom|||
+var_pop|def03_18#prev_2016|||||||custom|||
+var_pop|def03_18#prev_2017|||||||custom|||
+var_pop|def03_18#prev_2018|||||||custom|||
+var_pop|def03_18#prev_2019|||||||custom|||
+var_pop|def03_18#prev_2020|||||||custom|||
+var_pop|def03_18#prev_2021|||||||custom|||
+var_pop|def03_19#inc_2011_2015|||||||custom|||
+var_pop|def03_19#inc_2016_2021|||||||custom|||
+var_pop|def03_19#prev_2015|||||||custom|||
+var_pop|def03_19#prev_2016|||||||custom|||
+var_pop|def03_19#prev_2017|||||||custom|||
+var_pop|def03_19#prev_2018|||||||custom|||
+var_pop|def03_19#prev_2019|||||||custom|||
+var_pop|def03_19#prev_2020|||||||custom|||
+var_pop|def03_19#prev_2021|||||||custom|||
+var_pop|def03_20#inc_2011_2015|||||||custom|||
+var_pop|def03_20#inc_2016_2021|||||||custom|||
+var_pop|def03_20#prev_2015|||||||custom|||
+var_pop|def03_20#prev_2016|||||||custom|||
+var_pop|def03_20#prev_2017|||||||custom|||
+var_pop|def03_20#prev_2018|||||||custom|||
+var_pop|def03_20#prev_2019|||||||custom|||
+var_pop|def03_20#prev_2020|||||||custom|||
+var_pop|def03_20#prev_2021|||||||custom|||
+var_pop|def03_21#inc_2011_2015|||||||custom|||
+var_pop|def03_21#inc_2016_2021|||||||custom|||
+var_pop|def03_21#prev_2015|||||||custom|||
+var_pop|def03_21#prev_2016|||||||custom|||
+var_pop|def03_21#prev_2017|||||||custom|||
+var_pop|def03_21#prev_2018|||||||custom|||
+var_pop|def03_21#prev_2019|||||||custom|||
+var_pop|def03_21#prev_2020|||||||custom|||
+var_pop|def03_21#prev_2021|||||||custom|||
+var_pop|def03_22#inc_2011_2015|||||||custom|||
+var_pop|def03_22#inc_2016_2021|||||||custom|||
+var_pop|def03_22#prev_2015|||||||custom|||
+var_pop|def03_22#prev_2016|||||||custom|||
+var_pop|def03_22#prev_2017|||||||custom|||
+var_pop|def03_22#prev_2018|||||||custom|||
+var_pop|def03_22#prev_2019|||||||custom|||
+var_pop|def03_22#prev_2020|||||||custom|||
+var_pop|def03_22#prev_2021|||||||custom|||
+var_pop|def03_23#inc_2011_2015|||||||custom|||
+var_pop|def03_23#inc_2016_2021|||||||custom|||
+var_pop|def03_23#prev_2015|||||||custom|||
+var_pop|def03_23#prev_2016|||||||custom|||
+var_pop|def03_23#prev_2017|||||||custom|||
+var_pop|def03_23#prev_2018|||||||custom|||
+var_pop|def03_23#prev_2019|||||||custom|||
+var_pop|def03_23#prev_2020|||||||custom|||
+var_pop|def03_23#prev_2021|||||||custom|||
+var_pop|def03_24#inc_2011_2015|||||||custom|||
+var_pop|def03_24#inc_2016_2021|||||||custom|||
+var_pop|def03_24#prev_2015|||||||custom|||
+var_pop|def03_24#prev_2016|||||||custom|||
+var_pop|def03_24#prev_2017|||||||custom|||
+var_pop|def03_24#prev_2018|||||||custom|||
+var_pop|def03_24#prev_2019|||||||custom|||
+var_pop|def03_24#prev_2020|||||||custom|||
+var_pop|def03_24#prev_2021|||||||custom|||
+var_pop|def03_25#inc_2011_2015|||||||custom|||
+var_pop|def03_25#inc_2016_2021|||||||custom|||
+var_pop|def03_25#prev_2015|||||||custom|||
+var_pop|def03_25#prev_2016|||||||custom|||
+var_pop|def03_25#prev_2017|||||||custom|||
+var_pop|def03_25#prev_2018|||||||custom|||
+var_pop|def03_25#prev_2019|||||||custom|||
+var_pop|def03_25#prev_2020|||||||custom|||
+var_pop|def03_25#prev_2021|||||||custom|||
+var_pop|def04_00#inc_2011_2015|||||||custom|||
+var_pop|def04_00#inc_2016_2021|||||||custom|||
+var_pop|def04_00#prev_2015|||||||custom|||
+var_pop|def04_00#prev_2016|||||||custom|||
+var_pop|def04_00#prev_2017|||||||custom|||
+var_pop|def04_00#prev_2018|||||||custom|||
+var_pop|def04_00#prev_2019|||||||custom|||
+var_pop|def04_00#prev_2020|||||||custom|||
+var_pop|def04_00#prev_2021|||||||custom|||
+cci|cci_1|Myocardial infarction|||index_date|-10*365|-1|icd8|410||Codes used to define CCI
+cci|cci_1|Myocardial infarction|||index_date|-10*365|-1|icd10|I21 I22 I23||Codes used to define CCI
+cci|cci_2|Congestive heart failure|||index_date|-10*365|-1|icd8|42709 42710 42711 42719 42899 78249||Codes used to define CCI
+cci|cci_2|Congestive heart failure|||index_date|-10*365|-1|icd10|I50 I110 I130 I132||Codes used to define CCI
+cci|cci_3|Peripheral vascular disease|||index_date|-10*365|-1|icd8|440 441 442 443 444 445||Codes used to define CCI
+cci|cci_3|Peripheral vascular disease|||index_date|-10*365|-1|icd10|I70 I71 I72 I73 I74 I77||Codes used to define CCI
+cci|cci_4|Cerebrovascular disease|||index_date|-10*365|-1|icd8|430 431 432 433 434 435 436 437 438||Codes used to define CCI
+cci|cci_4|Cerebrovascular disease|||index_date|-10*365|-1|icd10|I6 G45 G46||Codes used to define CCI
+cci|cci_5|Dementia|||index_date|-10*365|-1|icd8|29009 2901 29309||Codes used to define CCI
+cci|cci_5|Dementia|||index_date|-10*365|-1|icd10|F00 F01 F02 F03 F051 G30||Codes used to define CCI
+cci|cci_6|Chronic pulmonary disease|||index_date|-10*365|-1|icd8|490 491 492 493 515 516 517 518||Codes used to define CCI
+cci|cci_6|Chronic pulmonary disease|||index_date|-10*365|-1|icd10|J40 J41 J42 J43 J44 J45 J46 J47 J60 J61 J62 J63 J64 J65 J66 J67 		J684 J701 J703 J841 J920 J961 J982 J983||Codes used to define CCI
+cci|cci_7|Connective tissue disease|||index_date|-10*365|-1|icd8|712 716 734 446 13599||Codes used to define CCI
+cci|cci_7|Connective tissue disease|||index_date|-10*365|-1|icd10|M05 M06 M08 M09 M30 M31 M32 M33 M34 M35 M36 D86||Codes used to define CCI
+cci|cci_8|Ulcer disease|||index_date|-10*365|-1|icd8|53091 53098 531 532 533 534||Codes used to define CCI
+cci|cci_8|Ulcer disease|||index_date|-10*365|-1|icd10|K221 K25 K26 K27 K28||Codes used to define CCI
+cci|cci_9|Mild liver disease|||index_date|-10*365|-1|icd8|571 57301 57304||Codes used to define CCI
+cci|cci_9|Mild liver disease|||index_date|-10*365|-1|icd10|B18 K700 K701 K702 K703 K709 K71 K73 K74 K760||Codes used to define CCI
+cci|cci_10|Diabetes without end-organ damage|||index_date|-10*365|-1|icd8|24900 24906 24907 24909 25000 25006 25007 25009||Codes used to define CCI
+cci|cci_10|Diabetes without end-organ damage|||index_date|-10*365|-1|icd10|E100 E101 E109 E110 E111 E119||Codes used to define CCI
+cci|cci_11|Hemiplegia|||index_date|-10*365|-1|icd8|344||Codes used to define CCI
+cci|cci_11|Hemiplegia|||index_date|-10*365|-1|icd10|G81 G82||Codes used to define CCI
+cci|cci_12|Moderate to severe renal disease|||index_date|-10*365|-1|icd8|403 404 580 581 582 583 584 59009 59319 7531 792||Codes used to define CCI
+cci|cci_12|Moderate to severe renal disease|||index_date|-10*365|-1|icd10|I12 I13 N00 N01 N02 N03 N04 N05 N07 N11 N14 N17 N18 N19 Q61||Codes used to define CCI
+cci|cci_13|Diabetes with end-organ damage|||index_date|-10*365|-1|icd8|24901 24902 24903 24904 24905 24908 25001 25002 25003 25004 25005 25008||Codes used to define CCI
+cci|cci_13|Diabetes with end-organ damage|||index_date|-10*365|-1|icd10|E102 E103 E104 E105 E106 E107 E108 E112 E113 E114 E115 E116 E117 E118||Codes used to define CCI
+cci|cci_14|Solid cancer tumour|||index_date|-10*365|-1|icd8|14 15 16 17 18 190 191 192 193 194||Codes used to define CCI
+cci|cci_14|Solid cancer tumour|||index_date|-10*365|-1|icd10|C0 C1 C2 C3 C4 C5 C6 C70 C71 C72 C73 C74 C75||Codes used to define CCI
+cci|cci_15|Leukaemia|||index_date|-10*365|-1|icd8|204 205 206 207||Codes used to define CCI
+cci|cci_15|Leukaemia|||index_date|-10*365|-1|icd10|C91 C92 C93 C94 C95||Codes used to define CCI
+cci|cci_16|Lymphoma|||index_date|-10*365|-1|icd8|200 201 202 203 27559||Codes used to define CCI
+cci|cci_16|Lymphoma|||index_date|-10*365|-1|icd10|C81 C82 C83 C84 C85 C88 C90 C96||Codes used to define CCI
+cci|cci_17|Moderate to severe liver disease|||index_date|-10*365|-1|icd8|07000 07002 07004 07006 07008 57300 4560||Codes used to define CCI
+cci|cci_17|Moderate to severe liver disease|||index_date|-10*365|-1|icd10|B150 B160 B162 B190 K704 K72 K766 I85||Codes used to define CCI
+cci|cci_18|Metastatic solid tumour|||index_date|-10*365|-1|icd8|195 196 197 198 199||Codes used to define CCI
+cci|cci_18|Metastatic solid tumour|||index_date|-10*365|-1|icd10|C76 C77 C78 C79 C80||Codes used to define CCI
+cci|cci_19|AIDS|||index_date|-10*365|-1|icd8|07983||Codes used to define CCI
+cci|cci_19|AIDS|||index_date|-10*365|-1|icd10|B21 B22 B23 B24||Codes used to define CCI

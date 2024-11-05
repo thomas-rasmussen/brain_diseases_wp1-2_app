@@ -4,7 +4,7 @@ library(here)
 library(readr)
 library(stringr)
 
-version_suffix <- "v8_2024-09-12"
+version_suffix <- "v9_2024-11-05"
 
 #### Import data ####
 all_costs <- read_delim(
@@ -24,7 +24,9 @@ codelist <-  read_delim(
   here("data", paste0("codelist_", version_suffix, ".csv")),
   delim = "|",
   col_types = list(.default = "c"),
-  locale = readr::locale(encoding = "latin1")
+  # Used readr::guess_encoding to guess what encoding was needed to correctly
+  # read apostrophe in the parkinson disease label
+  locale = readr::locale(encoding = "windows-1252")
 )
 
 concurrent_diseases <-  read_delim(
